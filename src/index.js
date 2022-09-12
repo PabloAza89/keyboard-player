@@ -3,11 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom'; // installed
+import { Provider } from 'react-redux'; // installed
+import store from './redux/store'; // installed
+// also installed: redux, redux-thunk, react-refresh
+// also installed: webpack, webpack-cli, babel-loader, style-loader, css-loader
+// "build": "react-scripts build"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>
 );
 

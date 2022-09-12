@@ -1,0 +1,10 @@
+.navv p {
+    background-color: green;
+    color: aqua;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    height: 300px;
+    width: 100px;
+  }
